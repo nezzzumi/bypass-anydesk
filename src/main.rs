@@ -3,7 +3,12 @@ use registry::{Hive, Security};
 use std::process::Command;
 
 #[derive(Parser)]
+#[command(name = "Anydesk Bypass")]
+#[command(author = "Nezumi <constshi0n@proton.me>")]
+#[command(version = "1.0")]
+#[command(about = "Bypasses AnyDesk popup", long_about = None)]
 struct Args {
+    /// AnyDesk target id
     id: String,
 }
 
